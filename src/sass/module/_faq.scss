@@ -1,0 +1,22 @@
+
+.faq {
+  padding-top: 57px;
+  padding-bottom: 86px;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+}
+
+.faq .head__subtitle {
+  margin-bottom: 33px;
+}
+
+.faq__contents {
+  
+}

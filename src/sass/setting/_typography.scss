@@ -1,0 +1,26 @@
+/* FontFamily */
+$base-font-family: "";
+$second-font-family: "";
+
+body {
+  font-family: $base-font-family;
+  /* font-family: "Noto Sans JP", sans-serif; */
+  font-family: '游ゴシック Medium', 'Yu Gothic Medium', '游ゴシック体', YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* font-weight */
+$regular: 300;
+$normal: 400;
+$bold: 700;
+
+/* windowsでmediumと同時にboldを使うと文字が潰れるので游ゴシックを指示する */
+$font-family-bold: Arial, '游ゴシック体', YuGothic, "游ゴシック", 'Yu Gothic', sans-serif;
+
+@mixin font-bold {
+  font-family: $font-family-bold;
+  font-weight: 700;
+}
+
+.box{
+   @include font-bold;
+}

@@ -1,0 +1,22 @@
+
+.hover-under-line {
+	display: inline-block;
+	position: relative;
+	text-decoration: none;
+}
+.hover-under-line::after {
+	position: absolute;
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 1px;
+	background: #333;
+	transition: all 0.3s ease 0s;
+}
+.hover-under-line:hover {
+	cursor: pointer;
+}
+.hover-under-line:hover::after {
+	width: 100%;
+}

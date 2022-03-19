@@ -1,0 +1,32 @@
+@import "../function/function";
+
+.l-inner {
+  width: 100%;
+  padding-right: $padding-pc;
+  padding-left: $padding-pc;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md") {
+    max-width: $inner + strip-unit($padding-pc) * 2;
+    padding-right: $padding-sp;
+    padding-left: $padding-sp;
+  }
+}
+
+/* 追記 */
+.l-inner {
+  max-width: 900px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  @include mq(md) {
+    /* max-width: 600px; 
+    ハンバーガーメニューの
+    ドロワーにも影響あり
+    padding-left: 10px;
+    padding-right: 10px;
+    */
+  }
+}

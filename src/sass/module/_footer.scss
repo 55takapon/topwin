@@ -1,0 +1,235 @@
+.footer {
+  
+  
+}
+
+.footer__contact {
+  padding-top: 70px;
+  padding-bottom: 40px;
+
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+
+  background-image: url(./../images/cta.jpg);/* ./../サーバーアップロード時変更要 */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.footer__contact__head__request {
+  width: 280px;
+  height: 50px;
+  /*line-height: 40px;*/
+  border-radius: 25px;
+  background-color: #ff3300;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  
+  /* ボタンを中央寄せ */
+  margin-left: auto;
+  margin-right: auto;
+  /* 文字を中央寄せ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+@-moz-document url-prefix() {
+  .footer__contact__head__request a{
+    line-height: 50px;  
+  }
+}
+
+_::-webkit-full-page-media, _:future, :root .footer__contact__head__request a{
+  line-height: 50px;  
+}
+*/
+.footer__contact__head__contact:hover{
+  text-decoration: none;
+
+}
+
+.footer__phone {
+  text-align: center;
+  margin-bottom: 10px;
+  color: #1B224C;
+}
+
+.footer__phone__number {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.footer__inner {
+  background-color: #0088cc;
+  padding-top: 35px;
+}
+
+.footer__info {
+  margin-left: auto;
+  margin-right: 0px;
+
+
+}
+
+.footer__info__phone {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  
+  color: #fff;
+  text-align: right;
+
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.footer__info__phone__img {
+  margin-right: 5px;
+}
+
+.footer__info__text {
+  text-align: right;
+  color: #fff;
+
+  margin-bottom: 60px;
+}
+
+.footer__info__phone img {
+  width: 10px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.footer__nav__wrapper {
+  display: flex;
+  /*justify-content: center;
+  align-items: flex-start;*/
+  margin-top: 10px;
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.footer__nav__list {
+  position: relative;
+
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+
+  @include mq(md) {
+    margin-bottom: 10px;
+  }
+}
+
+.footer__nav__list:hover {
+  color: grey;
+}
+
+
+/* navの右側に縦線追加 */
+.footer__nav__list::after {
+  position: absolute;
+  top: 0;
+	left: 100%;
+	margin: 0 0rem;
+	content: "";
+	width: 1px; /*--縦線の太さ(幅)--*/
+	height: rem(16);
+	background-color: #fff; /*--縦線の色--*/
+
+  @include mq(md) {
+    display: none;
+  }
+}
+
+/* 最後の要素を打ち消し */
+.footer__nav__list:last-child:after {
+  display: none;
+}
+
+
+
+.footer__head {
+  margin-top: rem(0);
+  padding-right: 10px;
+  @include mq(md) {
+    margin-right: 10px;
+  }
+  
+
+  .head__logo {
+    margin-bottom: rem(0);
+
+    width: 197px;
+    height: auto;
+  }
+}
+
+.footer__text {
+  margin-top: rem(60);
+  
+}
+
+.footer__text-1 {
+  margin-bottom: rem(20);
+}
+
+.footer__text-adress {
+  margin-left: rem(20);
+
+}
+
+.footer__text-fax {
+  margin-left: rem(20);
+
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+
+  margin-top: rem(24);
+  margin-bottom: rem(54);
+
+  @include mq(md) {
+    display: block;
+  }
+  
+}
+
+.footer__link a {
+  margin-left: rem(60);
+
+  @include mq(md) {
+    margin-left: 0;
+    line-height: rem(32);
+  }
+}
+
+.footer-corp {
+  height: 36px;
+  line-height: 36px;
+  background-color: #fff;
+  color: #1B224C;
+
+  text-align: right;
+}
+
+.footer-corp p {
+  padding-right: 10px;
+  @include mq(md) {
+    margin-right: 10px;
+  }
+}

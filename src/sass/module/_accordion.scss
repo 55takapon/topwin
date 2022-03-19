@@ -1,0 +1,65 @@
+.accordion{
+  max-width: 900px;
+  width: 100%;
+  padding: 10px 0px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(md) {
+    padding: 10px 0px;
+  }
+
+  h3.open_h3{
+    /*  border-bottom: 1px dotted #a9a9a9; */
+     cursor: pointer;
+     margin: 0;
+   
+     border: 1px solid #E5E5E5;
+     background-color: #fff;
+   
+     padding-top: 20px;
+     padding-bottom: 20px;
+
+     @include mq(md) {
+       padding-left: 10px;
+       padding-right: 10px;
+    }     
+   }
+   
+   .open_h3:after, 
+   .open_h3.active:after {
+     font-size: 22px;
+     margin-left: 20px;
+   }
+   .open_h3.active::after {
+     content: "＋";
+   }
+   .open_h3::after {
+     content: "－";
+   }
+   .info{
+     font-size: 13px;
+   }
+   /**/
+   
+   /* 追加 */
+   .accordion-text p {
+     padding-top: 20px;
+     padding-bottom: 20px;
+   }
+
+   ul.ul_open {
+     border: 1px solid #E5E5E5;
+     background-color: #F2F2F2;
+     padding-left: 30px;
+     padding-right: 30px;
+   
+     height: auto; /*spにて文字はみ出るので指定*/
+
+     @include mq(md) {
+      padding-left: 10px;
+      padding-right: 10px;
+   }
+   }
+
+}

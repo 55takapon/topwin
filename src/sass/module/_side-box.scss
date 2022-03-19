@@ -1,0 +1,65 @@
+.side-box {
+	margin-left: 50px;
+	box-shadow: 0 2.85px 6.8px 0 rgba(0, 0, 0, 0.15);
+}
+.side-box .side-inner {
+	padding: 30px 20px 18px;
+}
+.side-box .side-inner .title {
+	padding: 0 7px 20px 7px;
+	font-size: 1.8rem;
+	font-weight: 700;
+	border-bottom: 1px solid #d0d0d0;
+}
+.side-box .side-inner .sub_navi li {
+	border-bottom: 1px solid #d0d0d0;
+}
+.side-box .side-inner .sub_navi li a {
+	display: block;
+	padding: 12px 7px;
+}
+.side-box .side-inner .sub_navi li a:hover .postDay, .side-box .side-inner .sub_navi li a:hover .postTitle {
+	text-decoration: underline;
+}
+.side-box .side-inner .sub_navi li a .postDay {
+	font-size: 1.2rem;
+}
+.side-box .side-inner .sub_navi li a .postTitle {
+	font-size: 1.6rem;
+}
+.side-box .side-inner .see-all {
+	margin-top: 20px;
+	text-align: right;
+}
+.side-box .side-inner .see-all a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 769px) {
+  .side-box {
+		margin-left: 0;
+	}
+	.side-box .side-inner {
+		padding: 16px 24px 12px;
+	}
+	.side-box .side-inner .title {
+		padding: 0 4px 14px 4px;
+		font-size: 1.4rem;
+	}
+	.side-box .side-inner .sub_navi li a {
+		padding: 7px 4px;
+	}
+	.side-box .side-inner .sub_navi li a .postDay {
+		font-size: 1.1rem;
+	}
+	.side-box .side-inner .sub_navi li a .postTitle {
+		font-size: 1.2rem;
+	}
+	.side-box .side-inner .see-all {
+		margin-top: 12px;
+	}
+	.side-box .side-inner .see-all a {
+		font-size: 1.1rem;
+	}
+
+}

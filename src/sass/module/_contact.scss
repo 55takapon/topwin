@@ -1,0 +1,19 @@
+.contact {
+  /* background-color: #05A5FA; */
+  padding-top: rem(65);
+  padding-bottom: rem(70);
+
+  background: linear-gradient(-135deg,  #63FBD7, #05A5FA);
+
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px; 
+  }
+}
+
+.contact p {
+  margin-top: 39px;
+  margin-bottom: 48px;
+  text-align: center;
+  
+}

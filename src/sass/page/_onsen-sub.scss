@@ -1,0 +1,52 @@
+.onsen-kouno {
+  padding-left: 10px;
+  padding-right: 10px;
+
+  padding-top: 50px;
+  padding-bottom: 80px;
+
+  border-top: 1px solid #E7E7E7;
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.onsen-kouno-inner {
+  max-width: rem(880);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.onsen-kouno h2 {
+  text-align: center;
+
+  padding-bottom: 30px;
+}
+
+.onsen-sub__content__title {
+
+  border-bottom: 1px solid #E7E7E7;
+}
+
+.onsen-kouno__wrapper {
+  display: flex;
+  border-bottom: 1px solid #E7E7E7;
+
+  margin-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+
+
+.onsen-kouno__title {
+  max-width: 200px;
+  width: 100%;
+
+  @include mq(md) {
+    max-width: 80px;
+  }
+}
+
+.onsen-kouno__text {
+  flex: 1;
+}

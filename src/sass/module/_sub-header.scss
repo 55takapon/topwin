@@ -1,0 +1,99 @@
+/*
+.header {
+  
+  height: 94px;
+  max-width: 1366px;
+  width: 100%;
+  background-color: #fff;
+  
+  @include mq(md) {
+    
+  }
+}
+*/
+
+.sub-header__section {
+  position: fixed;
+  width: 100%;
+  z-index: 12;
+  background-color: #fff;/* subで変更 */
+
+  /*box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);  影 */
+  
+  .openbtn span {
+    background-color: #000;
+  }
+}
+
+.sub-header__inner {
+  /* position: fixed; */
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  /*justify-content: space-around;*/
+  width: 100%;
+  
+  transition: all .3s;
+  height: 80px;
+
+  background-color: none;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include mq(md) {
+    /* max-width: 600px; */
+    padding: 10px 0px;
+    
+  }
+}
+
+.sub-header__logo {
+  
+  display: flex;
+  align-items: center;
+  color: #000;
+
+  @include mq(md) {
+    margin-left: 0px;
+  }
+}
+
+.sub-header__logo img {
+  width: rem(47);
+  height: auto;
+  
+}
+
+.sub-header__logo h1 {
+  margin-left: 20px;
+  margin-right: rem(100);
+  @include mq(md) {
+    margin-right: 20px;
+  }
+}
+/*
+.header__contact__btn {
+  右端寄せして左marginをauto
+  margin-left: auto;
+  margin-right: 0px;
+
+  background-color: #978F10;
+  
+  border: none;
+  
+  @include mq(md) {
+    margin-right: 80px;
+    width: 100px;
+    height: 36px;
+    line-height: 26px;
+  }
+}*/
+
+/*  
+.sub-header__section.change-color {
+  ヘッダースクロールで背景色変更
+  background-color: #000;
+  z-index: 12;
+  
+}*/

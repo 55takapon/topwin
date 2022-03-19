@@ -1,0 +1,26 @@
+.onsen-top {
+  margin-top: rem(122);
+  margin-bottom: rem(78);
+}
+
+.onsen-top__img {
+  margin-right: 5vw;
+}
+
+.onsen-top__content {
+  width: rem(900);
+
+  padding-top: rem(20);
+  padding-left: 0px;
+  padding-right: 10px;
+
+  @include mq(md) {
+    width: auto;
+    margin-left: 10px;
+  }
+}
+
+.onsen-top__content__text {
+  margin-top: rem(60);
+  margin-bottom: rem(30);
+}

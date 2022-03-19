@@ -1,0 +1,28 @@
+.l-sub-hero {
+  position: relative;
+  
+  padding-top: 80px;
+  margin-bottom: -0px;/*パンくずリストの高さ補正*/
+}
+
+.l-sub-hero-title {
+  position: absolute;
+  top: calc(50% + 40px);/*padding分計算*/
+  left: 50%;
+  transform:translate(-50%, -50%);
+  
+  
+  
+
+  
+  @include mq(md) {
+    
+  }
+}
+
+.l-sub-hero-img {
+  background-size: cover; 
+  background-position: center center; /* 背景画像は中央を軸に表示させる */
+  height: rem(500); /* 600pxの高さで表示させる */
+  
+}

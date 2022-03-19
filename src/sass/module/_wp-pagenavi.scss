@@ -1,0 +1,40 @@
+
+  .wp-pagenavi{
+    text-align: center;
+    .pages{
+      display: none;
+    }
+  span, a{
+    /*数字部分の共通CSS　大きさなど*/
+    display: inline-block;
+    margin: 4px;
+    padding: 10px 12px;
+    color: #1B224C;
+    line-height: 1;
+    font-size: 14px;
+    text-decoration: none;
+    background: #fff;
+    border: 1px solid #0088cc;
+
+    &.current, &:hover{
+      /*現在のページ*/
+      color: #fff;
+      background: #0088cc;
+    }
+  }
+  /*その他、必要があれば以下のクラスにcssを指定する*/
+  .previouspostslink{
+    display: none;
+  }
+  .nextpostslink{
+    display: none;
+  }
+  .first{
+    
+  }
+  .last{
+    
+  }
+  .smaller{}
+  .larger{}
+  }

@@ -1,0 +1,44 @@
+.news-sub {
+  padding-left: 10px;
+  padding-right: 10px;
+  
+  border-top: 1px solid #D5D5D5;
+  
+  margin-bottom: 50px;
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.news-sub__wrapper {
+
+  
+  
+}
+
+
+
+.news-sub__body {
+  display: flex;
+  align-items: baseline;
+  color: #1B224C;
+}
+
+.news-sub__title {
+  text-decoration: underline;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  
+  margin-left: 50px;
+  flex-basis: 85%;
+}
+
+.news-sub__date {
+  
+}
+.news-sub__inner {
+  
+  border-bottom: 1px solid #D5D5D5;
+}
+

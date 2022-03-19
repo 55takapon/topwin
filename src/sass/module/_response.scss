@@ -1,0 +1,33 @@
+
+.response {
+  margin-bottom: 156px;
+}
+
+.response__wrapper {
+  display: flex;
+  justify-content: space-around;
+
+  margin-top: 63px;
+
+  @include mq(md) {
+    flex-direction: column;
+  }
+}
+
+.response__img {
+  max-width: rem(400);
+  width: 100%;
+  height: auto;
+
+  @include mq(md) {
+    margin-bottom: rem(40);
+  }
+}
+
+.response__content {
+  flex-basis: 40%;
+}
+
+.response__content__title {
+  margin-bottom: rem(36);
+}

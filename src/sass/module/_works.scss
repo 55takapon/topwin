@@ -1,0 +1,85 @@
+/* paginationをswiper下にするスペース確保
+.swiper-container {
+  padding-bottom: rem(30);
+}
+ */
+/* paginationを右下寄せ
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 0;
+  text-align: right;
+}
+ */
+/* paginationをswiper下に配置
+.swiper-wrapper {
+  padding-bottom: rem(30);
+}
+ */
+/*
+.works {
+  
+  
+  @include mq(md) {
+    
+    max-width: rem(1260);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    
+    background-attachment: fixed;
+    background-position: right ;
+    align-items: center;
+  }
+}
+*/
+
+.works {
+  padding-top: 57px;
+  padding-bottom: 60px;
+  background-color: #0088cc;
+  border: 1px solid #707070;
+  color: #fff;
+  
+}
+
+.works__head h2 {
+  color: #fff !important;
+}
+
+.works__outer {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/*
+.works__text {
+  text-align: center;
+  margin-top: rem(29);
+  margin-bottom: rem(25);
+}
+
+.swiper-container {
+  width: 85%;
+
+  @include mq(md) {
+    width: 90%;
+    
+  }
+}
+
+.works__box {
+
+  @include mq(md) {
+    
+  }  
+}
+
+.works__body {
+  text-align: center;
+}
+
+.works__link {
+  text-align: center;
+}
+*/
+/* 追加 */

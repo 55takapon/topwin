@@ -1,0 +1,83 @@
+
+.post {
+  
+  width: rem(430);
+  height: rem(130);
+  background-color: #F6F6F6;
+  padding: 15px 10px;
+  
+  margin-bottom: 20px;
+
+  /*margin-left: 0;
+
+  margin-right: 40px; rem禁止！remにしたら可変で右端margin復活した事例あり */
+  /* width: calc(50% - 40px / 2);カラム3分割して30pxずつmargin */
+  
+
+  @include mq(md) {
+    /* width: calc(100% - 0px / 1);カラム3分割して30pxずつmargin */
+
+    margin-left: auto;
+    margin-right: auto; 
+  }
+}
+
+/* 
+.post:nth-child(2n) {
+  margin-left: auto;autoにするとrightが効く 
+  margin-right: 0px; 2カラム右端のmarginを打ち消し 
+  @include mq(md) {
+    margin-left: auto;
+    margin-right: auto; 
+  }
+}
+*/
+
+.post__img {
+  
+
+  @include mq(md) {
+    
+  }
+}
+
+.post__img img {
+  width: rem(100);
+  height: rem(100);
+  object-fit: cover;
+
+  @include mq(md) {
+    width: 80px;
+    height: 80px; 
+  }
+}
+
+.post__body {
+  flex-basis: 80%; 
+
+  @include mq(md) {
+    /* テキスト長くなると画像が小さくなるので指定 */
+    flex-basis: 80%; 
+  }
+}
+
+.post__date {
+  margin-left: 30px;
+  margin-bottom: 5px;
+
+  @include mq(md) {
+    margin-left: 10px; 
+  }
+}
+
+.post__title {
+  margin-left: 30px;
+
+  @include mq(md) {
+    margin-left: 10px; 
+  }
+}
+
+.post-tab {
+  display: flex;
+}

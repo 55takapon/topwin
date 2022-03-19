@@ -1,0 +1,58 @@
+.sub-breadcrumb{
+  
+  width: 100%;
+  background-color: none;
+  height: rem(45);
+  padding-left: rem(20);
+  margin-bottom: rem(60);
+  
+  
+  @include mq(md) {
+    
+    height: rem(25);
+    
+    margin-bottom: rem(40);
+  }
+
+}
+
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-weight: normal;/*太さ*/
+  font-size: rem(16);
+  line-height: rem(45);
+
+  
+  
+
+  @include mq(md) {
+    font-size: rem(12);
+    line-height: rem(25);
+  }
+}
+
+.breadcrumb li:after {/* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #000;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #000 /*色*/
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}

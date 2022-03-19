@@ -1,0 +1,58 @@
+.access {
+  padding-top: 60px;
+  padding-bottom: 100px;
+
+  background-image: url(./../images/bg@2x-min.jpg);/* ./../サーバーアップロード時変更要 */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+ 
+  }
+
+  .head__title {
+    margin-top: rem(15);
+  }
+}
+
+.access__wrapper {
+  display: flex;
+
+  margin-top: 80px;
+  margin-bottom: 70px;
+
+  @include mq(md) {
+    flex-direction: column;
+ 
+  }
+}
+
+.access__img {
+  max-width: rem(656);
+  height: auto;
+  margin-right: 3vw;
+
+  @include mq(md) {
+    width: 100%;
+    margin-left: rem(0);
+    margin-right: rem(10);
+ 
+  }
+}
+
+.access__content {
+  margin-top: rem(20);
+  line-height: rem(40);
+
+}
+
+.access__map {
+  max-width: rem(792);
+  height: auto;
+
+  margin-left: auto;
+  margin-right: auto;
+}

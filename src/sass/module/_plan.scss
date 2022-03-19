@@ -1,0 +1,79 @@
+.plan {
+  
+  padding-bottom: 40px;
+  
+  text-align: center;
+  
+  
+  
+  
+
+  @include mq(md) {
+    padding-bottom: 60px;
+  }
+
+  .head__title {
+    margin-top: rem(15);
+  }
+}
+
+.plan__inner {
+  background-image: url(./../images/price.jpg);/* ./../サーバーアップロード時変更要 */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  
+  width: 100%;
+  height: 220px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*孫要素を縦横中央寄せ*/
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  
+
+}
+
+
+
+.plan__head__title {
+  color: #fff;
+  
+  padding-top: rem(0);
+}
+
+.plan__head__button {
+  color: #fff;
+  
+  width: 200px;
+  height: 50px;
+  
+  /*line-height: 40px;*/
+  background: none;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+
+  /* ボタンを中央寄せ */
+  margin-left: auto;
+  margin-right: auto;
+  /* 文字を中央寄せ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*
+@-moz-document url-prefix() {
+  .plan__head__button a{
+    line-height: 50px;  
+  }
+}
+
+_::-webkit-full-page-media, _:future, :root .plan__head__button a {
+  line-height: 50px;
+}
+*/

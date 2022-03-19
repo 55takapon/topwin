@@ -1,0 +1,155 @@
+.message {
+  /*
+  background-image: url(./../images/bg@2x-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  */
+  background-color: #0088cc;/*#1B224C*/
+
+  
+  height: auto;
+  width: 100%;
+  
+  padding-top: 100px;
+  padding-bottom: 50px;
+
+  @include mq(md) {
+    height: auto;
+  }
+  
+}
+
+.message__outer {
+  position: relative;
+  text-align: center;
+  width:100%;
+  height:100%;
+  
+  @include mq(md) {
+    display: block;
+  }
+}
+
+.message__wrapper {
+  display: flex;
+  justify-content: space-around;
+  
+  margin-top: rem(40);
+  margin-bottom: rem(40);
+  margin-left: rem(100);
+  margin-right: rem(100);
+
+  @include mq(md) {
+    display: block;
+    margin-left: rem(10);
+    margin-right: rem(10);
+  }
+}
+/* 
+.message__inner {
+  width:rem(850);
+  height:rem(600);
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:rem(-400);
+  margin-top:rem(-300);
+  
+  
+  @include mq(md) {
+    width: auto;
+    margin-left:rem(-170);
+    margin-top:rem(-300);
+  }
+}
+ */
+
+
+.message__box {
+  width: rem(900);
+  width: 100%;
+  height: auto;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+
+  /*border:#6fb5ff solid 5px;*/
+  outline:#0088cc solid 5px;
+  outline-offset:-15px;
+  
+
+  /*孫要素を縦横中央寄せ*/
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 50px;
+    
+  }
+  
+}
+
+.message__inner {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.message__box__head {
+  
+  
+
+}
+
+.message__box__title {
+  margin-top: 30px;
+  color: #1B224C;
+  
+}
+
+/*文字幅に合わせるにはspanで囲うこと*/
+.p-under {
+  background: linear-gradient(transparent 70%, #ff3300 70%);/*#F5A623*/
+}
+
+.message__box__text {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #1B224C;
+
+
+  @include mq(md) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+
+
+.message__text {
+  margin-top: rem(120);
+  line-height: rem(32);
+  letter-spacing: rem(7);
+  margin-left: rem(100);
+
+  @include mq(md) {
+    line-height: rem(20);
+    margin-left: rem(10);
+  }
+}
+
+.message__author {
+  margin-top: rem(400);
+  letter-spacing: rem(20);
+
+}
+.message__sub-title {
+  @include mq(md) {
+    margin-bottom: 20px;
+  }
+  position: relative;
+}

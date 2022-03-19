@@ -1,0 +1,153 @@
+.sub-page__message {
+  text-align: center;
+  margin-top: rem(100);
+  margin-bottom: rem(50);
+}
+
+.features-sub {
+  margin-bottom: rem(230);
+
+  @include mq(md) {
+    margin-bottom: rem(80);
+    
+  }
+}
+
+.features-sub-reverse {
+  margin-bottom: rem(80);
+}
+
+.features-sub__wrapper {
+  display: flex;
+  position: relative;
+  
+  @include mq(md) {
+    flex-direction: column;
+    
+  }
+}
+
+.features-sub__img {
+  
+
+  max-width: rem(525);
+  height: auto;
+
+  @include mq(md) {
+    max-width: 100vw;
+    width: 100%;
+  }
+
+}
+
+.features-sub__content {
+  position: absolute;
+  background-image: url(./../images/bg-sub@2x-min.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  max-width: rem(813);
+  width: 100%;
+  height: rem(381);
+  
+  top: rem(57);
+  right: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  padding-left: rem(150);
+  
+  @include mq(md) {
+    position: relative;
+    top: auto;
+    right: auto;
+    padding-left: rem(10);
+    
+    justify-content: flex-start;
+    
+    padding-right: rem(10);
+    height: rem(280);
+
+    max-width: 100vw;
+    width: 100%;
+  }
+
+}
+
+.features-sub__img-reverse {
+  position: absolute;
+
+  max-width: rem(525);
+  height: auto;
+
+  top: rem(-57);
+  right: 0;
+  
+  @include mq(md) {
+    position: relative;
+    top: auto;
+    right: auto;
+    
+    @include mq(md) {
+      max-width: 100vw;
+      width: 100%;
+    }
+  }
+
+}
+
+.features-sub__content-reverse {
+  
+  background-image: url(./../images/bg-sub@2x-min.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  max-width: rem(813);
+  width: 100%;
+  height: rem(381);
+  
+  
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: -1;
+  padding-right: rem(150);
+
+  @include mq(md) {
+    padding-right: rem(10);
+
+    padding-left: rem(10);
+
+    height: rem(280);
+
+    max-width: 100vw;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  
+
+}
+
+.features-sub__title {
+  margin-top: 30px;
+
+  @include mq(md) {
+    margin-top: rem(-30);
+    margin-left: 0;
+  }
+}
+
+.features-sub__text {
+  margin-top: rem(30);
+  margin-bottom: rem(30);
+
+  @include mq(md) {
+    margin-top: rem(20);
+    margin-bottom: rem(20);
+    margin-left: 0;
+    
+  }
+}

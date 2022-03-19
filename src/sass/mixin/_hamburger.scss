@@ -1,0 +1,187 @@
+.burger-btn{
+  display: none;
+}
+
+@media (max-width: 767px) {
+  /*
+  .header{
+    padding: 0 5%;
+  }
+
+  .burger-btn{
+    display: block;      
+    width: 39px;      
+    height: 39px;      
+    position: relative;      
+    z-index: 3;
+    border:none;    
+  }    
+  .bar{      
+    width: 34px;      
+    height: 2px;        
+    display: block;      
+    position: absolute;      
+    left: 50%;      
+    transform: translateX(-50%);      
+    background-color: #fff;    
+  }    
+  .bar_top{   
+    top: 12px;
+  }
+  .bar_mid{    
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .bar_bottom{
+    bottom: 12px;
+  }
+
+  .burger-btn.close .bar_top{      
+    transform: translate(-50%,8px) rotate(45deg);      
+    transition: transform .3s;    
+  }    
+  .burger-btn.close .bar_mid{      
+    opacity: 0;       
+    transition: opacity .3s;    
+  }    
+  .burger-btn.close .bar_bottom{      
+  transform: translate(-50%,-6px) rotate(-45deg);      
+  transition: transform .3s;    
+  }
+  */
+
+
+  /*========= ナビゲーションのためのCSS ===============*/
+
+#g-nav{
+  /*position:fixed;にし、z-indexの数値を小さくして最背面へ*/
+  position:fixed;
+  z-index: -1;
+  opacity: 0;/*はじめは透過0*/
+  /*ナビの位置と形状*/
+  top:0;
+  width:100%;
+  /*他のボタンが押せない事象発生、100vhで前面カバーされているから*/
+  /*height: 100vh;ナビの高さ*/
+  /* background-image: linear-gradient(135deg, #7633a4,#250d65); */
+  background: #fff;
+  /*動き*/
+  transition: all 0.3s;
+}
+
+/*アクティブクラスがついたら透過なしにして最前面へ*/
+#g-nav.panelactive{
+opacity: 1;
+z-index:999;
+height: 100vh;/*activeになってから前面全面表示にする*/
+/*l-innerの設定値も関連あり*/
+width: 100%;
+/*背景色設定*/
+background-color: #0088cc;
+/*background: linear-gradient(-135deg,  #63FBD7, #05A5FA);*/
+
+
+}
+
+/*ナビゲーションの縦スクロール*/
+#g-nav.panelactive #g-nav-list{
+  /*ナビの数が増えた場合縦スクロール*/
+  position: fixed;
+  z-index: 999; 
+  width: 100%;
+  height: 100vh;/*表示する高さ*/
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*ナビゲーション*/
+#g-nav ul {
+  display: none;
+  /*ナビゲーション天地中央揃え*/
+  position: absolute;
+  z-index: 999;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+#g-nav.panelactive ul {
+  display: block;
+}
+
+/*リストのレイアウト設定*/
+
+#g-nav li{
+  list-style: none;
+  text-align: center; 
+}
+
+#g-nav li a{
+color: #fff;/*ナビの文字色*/
+text-decoration: none;
+padding:10px;
+display: block;
+text-transform: uppercase;
+letter-spacing: 0.1em;
+font-weight: bold;
+}
+
+/*========= ボタンのためのCSS ===============*/
+.openbtn{
+  position:fixed;
+  z-index: 9999;/*ボタンを最前面に*/
+  top:10px;
+  right: 0px;
+  cursor: pointer;
+  width: 75px;
+  height:50px;
+  
+}
+
+/*×に変化*/	
+.openbtn span{
+  display: inline-block;
+  transition: all .4s;
+  position: absolute;
+  left: 14px;
+  height: 3px;
+  border-radius: 2px;
+  background-color: #0088cc;/*ハンバーガー色*/
+  width: 45%;
+}
+
+.openbtn span:nth-of-type(1) {
+top:15px;	
+}
+
+.openbtn span:nth-of-type(2) {
+top:23px;
+}
+
+.openbtn span:nth-of-type(3) {
+top:31px;
+}
+
+.openbtn.active span:nth-of-type(1) {
+  top: 18px;
+  left: 18px;
+  transform: translateY(6px) rotate(-45deg);
+  width: 50%;
+  background-color: #fff;/*open時のハンバーガー色*/
+}
+
+.openbtn.active span:nth-of-type(2) {
+opacity: 0;
+}
+
+.openbtn.active span:nth-of-type(3){
+  top: 30px;
+  left: 18px;
+  transform: translateY(-6px) rotate(45deg);
+  width: 50%;
+  background-color: #fff;/*open時のハンバーガー色*/
+}
+
+
+
+}

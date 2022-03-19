@@ -1,0 +1,86 @@
+.global-nav {
+    /* header高さと合わせる */
+    height:rem(80);
+    
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* z-index: 12; */
+
+    @include mq(md) {
+      
+    }
+    
+  &__list {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: center;
+      width: 100%;
+      padding: 0;
+      
+      padding-left: rem(0);
+
+    @include mq(md) {
+      display: flex;
+      
+      list-style: none;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      
+      padding-left: rem(0);
+    
+    }
+  }
+
+  &__item {
+    display: block;
+      margin-left: 20px;
+      margin-right: 20px;
+      
+      z-index: 20;
+    
+    @include mq(md) {
+      /* display: none; */
+      display:block;
+      margin-left: 0; /*ドロワーですきま消す*/
+      margin-right: 0; /*ドロワーですきま消す*/
+    }
+  }
+
+  &__link {
+    position: relative;
+    display: inline-block;/* nav高さいっぱいでボタンが押せるよう指定 */
+    
+
+    @include mq(md) {
+      line-height: rem(74); /* nav高さいっぱいでボタンが押せるよう指定 */
+      
+    }
+    /* 
+    &::after {
+      position: absolute;
+      bottom: rem(20); 
+      left: 0;
+      display: block;
+      width: 0;
+      height: rem(1);
+      content: "";
+      transition: width .3s;
+      background-color: #fff;
+
+      @include mq(md) {
+        display: none;     
+      }
+    }
+    &:hover {
+      text-decoration: none;
+      &::after {
+        width: 100%;
+      }
+    }*/
+  }
+}
+

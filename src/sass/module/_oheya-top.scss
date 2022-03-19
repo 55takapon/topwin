@@ -1,0 +1,26 @@
+.oheya-top {
+  margin-top: rem(106);
+  margin-bottom: rem(122);
+}
+
+.oheya-top__img {
+  margin-right: 5vw;
+}
+
+.oheya-top__content {
+  width: rem(850);
+
+  padding-top: rem(20);
+  padding-left: 0px;
+  padding-right: 10px;
+
+  @include mq(md) {
+    width: auto;
+    margin-left: 10px;
+  }
+}
+
+.oheya-top__content__text {
+  margin-top: rem(60);
+  margin-bottom: rem(40);
+}

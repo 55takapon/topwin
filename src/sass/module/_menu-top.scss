@@ -1,0 +1,32 @@
+.menu-top__wrapper {
+  justify-content: flex-end;
+}
+
+.menu-top__img {
+  margin-left: 0vw;
+
+  @include mq(md) {
+    order: 1;
+  }
+}
+
+.menu-top__content {
+  margin-right: 5vw;
+  width: rem(550);
+
+  padding-top: rem(20);
+  padding-left: 10px;
+  padding-right: 0px;
+
+  @include mq(md) {
+    width: auto;
+    margin-left: 0px;
+
+    order: 2;
+  }
+}
+
+.menu-top__content__text {
+  margin-top: rem(60);
+  margin-bottom: rem(40);
+}

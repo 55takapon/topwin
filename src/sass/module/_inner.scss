@@ -1,0 +1,16 @@
+.inner {
+  max-width: 1280px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  
+
+  @include mq(md) {
+    /* max-width: 600px; 
+    ハンバーガーメニューの
+    ドロワーにも影響あり
+    padding-left: 10px;
+    padding-right: 10px;
+    */
+  }
+}

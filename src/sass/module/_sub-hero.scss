@@ -1,0 +1,64 @@
+.sub-hero1 {
+  /* 背景imgをtopにfitさせる */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100vh; */
+
+  
+  /*  */
+  background-image: url(./../images/plan.jpg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  background-size: cover;
+  
+  height: 301px;
+}
+
+
+
+
+
+.sub-hero1__title {
+  margin-top: rem(80);
+  font-size: rem(32);
+  color: #fff;
+  
+}
+
+.sub-hero {
+  /* 背景imgをtopにfitさせる */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*height: 100vh; */
+
+  
+  /*  
+  background-image: url(./../images/plan.jpg);
+  background-repeat: no-repeat;
+  background-position: center 80px;
+  background-size: cover;
+  
+  height: 301px;*/
+  padding-top: 80px;
+}
+
+.sub-hero__inner {
+  position: relative;
+}
+
+.sub-hero__inner img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.sub-hero__title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}

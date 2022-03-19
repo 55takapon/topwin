@@ -1,0 +1,919 @@
+
+h1 {
+  font-size: rem(48);
+  font-weight: bold;
+
+  @include mq(md) {
+    font-size: rem(40);
+  }
+}
+
+h2 {
+  font-size: rem(36);
+  font-weight: bold;
+  
+
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+h3 {
+  font-size: rem(26);
+  font-weight: bold;
+  
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.head__title {
+  font-size: rem(36);
+  font-weight: bold;
+  text-align: center;
+  color: #1B224C;
+  
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+.head__subtitle {
+  font-size: rem(16);
+  font-weight: bold;
+  color: #3BA6C9;
+  text-align: center;
+  
+  @include mq(md) {
+    font-size: rem(13);
+  }
+}
+
+.global-nav li {
+  font-size: 16px;
+  font-weight: bold;
+  
+
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.header__info__text {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.header__info__phone {
+  font-size: 16px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.btn {
+  font-size: 14px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.header__request__btn {
+  color: #fff;
+  font-weight: bold;
+}
+
+.header__contact__btn {
+  color: #fff;
+  font-weight: bold;
+}
+
+.hero__request__btn {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 13px;
+  }
+}
+
+.hero__title {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 43px;
+  color: #fff;
+  @include mq(lg) {
+    font-size: 38px;
+  }
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  
+  line-height: 24px;
+  color: #fff;
+  @include mq(md) {
+    font-size: 13px;
+  }
+}
+
+.hero__contact {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+  @include mq(md) {
+    font-size: 13px;
+  }
+
+}
+
+.l-hero__title {
+  font-size: rem(32);
+  font-weight: bold;
+  line-height: rem(43);
+  color: #fff;
+  @include mq(md) {
+    font-size: rem(26);
+  }
+}
+
+.l-hero__subtitle {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: rem(21);
+  color: #fff;
+  @include mq(md) {
+    font-size: rem(13);
+  }
+}
+
+.l-sub-hero-title {
+  font-size: rem(34);
+  font-weight: bold;
+  
+  color: #fff;
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+.sub-hero__title {
+
+  font-size: rem(32);
+  font-weight: bold;
+  color: #fff;
+  @include mq(md) {
+    font-size: 22px;
+  }
+}
+
+
+
+.message__title{
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  @include mq(md) {
+    font-size: 28px;
+  }
+
+}
+
+.message__sub-title{
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 32px;
+  color: #fff;
+  @include mq(md) {
+    font-size: 14px;
+  }
+
+}
+
+.message__box__title {
+  font-size: rem(36);
+  font-weight: bold;
+  line-height: rem(50);
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+.message__box__text {
+  font-size: 16px;
+  font-weight: medium;
+  line-height: 20px;
+  
+  @include mq(md) {
+    font-size: 13px;
+  }
+
+}
+
+.message__text {
+  font-size: rem(18);
+  font-weight: bold;
+  line-height: rem(24);
+  @include mq(md) {
+    font-size: rem(13);
+  }
+
+}
+
+.message__author {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: rem(26);
+  @include mq(md) {
+    font-size: rem(13);
+  }
+
+}
+
+.sub-page__message {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: rem(32);
+  @include mq(md) {
+    font-size: rem(13);
+    line-height: rem(26);
+  }
+
+}
+
+.feature01__mark {
+  font-size: 12px;
+  
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.features__title {
+  font-size: rem(26);
+  font-weight: bold;
+  line-height: rem(35);
+  @include mq(md) {
+    font-size: rem(23);
+  }
+
+}
+
+
+.features__text {
+  font-size: rem(18);
+  
+  line-height: rem(24);
+  @include mq(lg) {
+    font-size: 13px;
+  }
+
+}
+
+.features-sub__title {
+  font-size: rem(24);
+  font-weight: bold;
+
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.features-sub__text {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: rem(26);
+  @include mq(md) {
+    font-size: rem(13);
+  }
+}
+
+.features-sub__option {
+  font-size: rem(14);
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.plan__head__title {
+  font-size: rem(26);
+  font-weight: bold;
+  
+  @include mq(lg) {
+    font-size: 23px;
+  }
+}
+
+.plan__head__button {
+  font-size: rem(16);
+  font-weight: bold;
+  line-height: 26px;
+  @include mq(lg) {
+    font-size: 13px;
+
+  }
+  @include mq(md) {
+    font-size: 13px;
+
+  }
+}
+
+.onsen-kouno__title {
+  font-size: rem(15);
+  font-weight: bold;
+  line-height: rem(30);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.onsen-kouno__text {
+  font-size: rem(15);
+  font-weight: bold;
+  line-height: rem(30);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.blog-news h3 {
+  font-size: rem(32);
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(26);
+  }
+}
+
+.blog__category {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.blog__title {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 13px;
+  }
+}
+
+.blog__date {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.blog-side__title {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.blog-side__sub-title {
+  font-size: 21px;
+  font-weight: bold;
+  @include mq(lg) {
+    font-size: 16px;
+  }
+}
+
+.blog-side__category-list {
+  font-size: 16px;
+  @include mq(lg) {
+    font-size: 13px;
+  }
+}
+
+.blog-sub__category {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.blog-sub__title {
+  font-size: 26px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 23px;
+  }
+}
+
+.blog-sub__text {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.blog-sub__date {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.blog-recommend__category {
+  font-size: rem(12);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+}
+
+.blog-recommend__title {
+  font-size: rem(18);
+    @include mq(lg) {
+      font-size: 13px;
+    }
+}
+
+.blog-recommend__text {
+  font-size: rem(16);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+}
+
+.blog-recommend__date {
+  font-size: rem(16);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+}
+
+.blog-detail {
+  h2 {
+    font-size: rem(26);
+    font-weight: bold;
+    @include mq(md) {
+      font-size: rem(23);
+    }
+  }
+
+  h3 {
+    font-size: rem(22);
+    font-weight: bold;
+    @include mq(md) {
+      font-size: rem(18);
+    }
+  }
+
+  p {
+    font-size: rem(16);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+  }
+
+  li {
+    font-size: rem(16);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+  }
+
+  .blog-detail__category {
+    font-size: 12px;
+    @include mq(md) {
+      font-size: 12px;
+    }
+  }
+  
+  .blog-detail__title {
+    font-size: rem(28);
+    font-weight: bold;
+    @include mq(md) {
+      font-size: rem(23);
+    }
+  }
+  
+  .blog-detail__text {
+    font-size: rem(16);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+  }
+  
+  .blog-detail__date {
+    font-size: rem(12);
+    @include mq(lg) {
+      font-size: 12px;
+    }
+  }
+
+}
+
+.blog-detail__side__title {
+  font-size: rem(21);
+  font-weight: bold;
+    @include mq(md) {
+      font-size: rem(17);
+    }
+}
+
+.news__date {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.news__title {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.news__category {
+  font-size: 16px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.news-sub__date {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.news-sub__title {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.news-detail__date {
+  font-size: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.table {
+  font-size: 16px;
+  
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.table__number {
+  font-weight: bold;
+  font-size: 16px;
+  @include mq(lg) {
+    font-size: 13px;
+  }
+}
+
+.table__title {
+  font-size: 18px;
+  font-weight: bold;
+  @include mq(lg) {
+    font-size: 14px;
+  }
+}
+
+.table__price {
+  font-size: 16px;
+  @include mq(lg) {
+    font-size: 13px;
+  }
+}
+
+.price p {
+  font-size: rem(16);
+  font-weight: bold;
+  text-align: center;
+  @include mq(md) {
+    font-size: rem(13);
+  }
+}
+
+.accordion-title {
+  font-size: rem(14);
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.accordion-text {
+  font-size: rem(14);
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.card__head {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 32px;
+  
+  @include mq(md) {
+    font-size: rem(12);
+  }
+
+}
+
+.card__job {
+  font-size: 14px;
+  
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.card__name {
+  font-size: 14px;
+  
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.card__text {
+  font-size: 14px;
+  
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.card__title {
+  font-size: rem(20);
+  font-weight: bold;
+  height: rem(32);
+  @include mq(md) {
+    font-size: rem(16);
+  }
+}
+
+.post__title {
+  font-size: rem(16);
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.post__date {
+  font-size: rem(14);
+  font-weight: normal;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.contact h2 {
+  color: #fff;
+}
+.contact p{
+  font-size: rem(16);
+  font-weight: bold;
+  color: #fff;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.access__content {
+  font-size: rem(16);
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.footer__contact__head {
+  font-size: 32px;
+  font-weight: bold;
+
+  color: #fff;
+  @include mq(md) {
+    font-size: 26px;
+  }
+}
+
+.footer__contact__head__request {
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.footer__contact__head__contact {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: underline;
+  @include mq(md) {
+    font-size: 12px;
+  }
+
+}
+
+.footer__info__text {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.footer__info__phone {
+  font-size: 16px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.footer__nav__list {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 16px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+
+}
+
+.footer-corp {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer__link {
+  
+  @include mq(md) {
+    font-size: 13px;
+  }
+}
+
+.footer p {
+  font-size: 14px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.footer__phone__text {
+  font-size: 16px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.footer__phone__number {
+  font-size: 36px;
+  font-weight: bold;
+  
+  @include mq(md) {
+    font-size: 28px;
+  }
+}
+
+.footer__phone__time {
+  font-size: 16px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.sub-page__title {
+  font-size: rem(32);
+  font-weight: bold;
+
+  color: #1B224C;
+  @include mq(md) {
+    font-size: rem(26);
+  }
+}
+
+.plan__system__inner-text {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  @include mq(md) {
+    font-size: 18px;
+  }
+}
+
+.plan__system__inner-mark {
+  font-size: 24px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: 19px;
+  }
+}
+
+.plan__system__inner p {
+  font-size: 16px;
+  
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.plan-box__inner {
+
+}
+
+.plan-box__head {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.plan-box__head-special {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.plan-box__body {
+
+}
+
+.plan-box__price {
+  font-size: 25px;
+  font-weight: bold;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.plan-box__price-special {
+  font-size: 25px;
+  font-weight: bold;
+  color: #ff3300;
+  @include mq(md) {
+    font-size: rem(20);
+  }
+}
+
+.plan-box__text {
+  font-size: 14px;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+.plan-box__content{
+  font-size: 14px;
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.contact-sub__text {
+  font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+}
+
+.breadcrumbs {
+  font-size: 12px;
+  @include mq(md) {
+    font-size: 12px;
+  }
+}
+
+.news-body {
+  .release {
+    font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+  }
+  .title {
+    font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(12);
+  }
+  }
+}
+
